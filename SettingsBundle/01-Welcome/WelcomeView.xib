@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WelcomeView" customModule="DemoSettings" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-sun" translatesAutoresizingMaskIntoConstraints="NO" id="hon-ix-UWG">
+                    <rect key="frame" x="75" y="125" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="KZx-dH-Pk3"/>
+                        <constraint firstAttribute="width" constant="150" id="lb2-gc-BEH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kc3-q2-w8v">
+                    <rect key="frame" x="51" y="136" width="98" height="48.5"/>
+                    <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="40"/>
+                    <color key="textColor" red="0.58994289340101524" green="0.23093061111521873" blue="0.2475063027115019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORLD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vK-0S-LUP">
+                    <rect key="frame" x="30.5" y="174.5" width="259" height="91"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="70"/>
+                    <color key="textColor" red="0.58994289340101524" green="0.23093061111521873" blue="0.2475063027115019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uht-HA-4sZ">
+                    <rect key="frame" x="245" y="5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ZVo-UZ-Jpl"/>
+                        <constraint firstAttribute="width" constant="50" id="fIG-I1-SNG"/>
+                    </constraints>
+                    <state key="normal" image="img-delete"/>
+                    <connections>
+                        <action selector="closeButtonTouchUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="4pO-tA-oBY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wly-q8-DAZ">
+                    <rect key="frame" x="110" y="285.5" width="80" height="50"/>
+                    <color key="backgroundColor" red="0.58994289339999995" green="0.23093061109999999" blue="0.24750630270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="4n7-oW-4Pp"/>
+                        <constraint firstAttribute="height" constant="50" id="khX-7x-y4a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="OK">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="closeButtonTouchUpInside:" destination="iN0-l3-epB" eventType="touchUpInside" id="eK7-9P-ko9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hon-ix-UWG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BvK-lk-jO6"/>
+                <constraint firstItem="hon-ix-UWG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Dq9-ox-JuR"/>
+                <constraint firstItem="Kc3-q2-w8v" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-50" id="Hk1-ZO-1IE"/>
+                <constraint firstItem="wly-q8-DAZ" firstAttribute="top" secondItem="1vK-0S-LUP" secondAttribute="bottom" constant="20" id="PtZ-FL-ZVE"/>
+                <constraint firstItem="Uht-HA-4sZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="PyW-qj-UcD"/>
+                <constraint firstItem="wly-q8-DAZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XsD-SM-hdv"/>
+                <constraint firstItem="Kc3-q2-w8v" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-40" id="ajD-FE-6bY"/>
+                <constraint firstAttribute="trailing" secondItem="Uht-HA-4sZ" secondAttribute="trailing" constant="5" id="ayl-B4-E5J"/>
+                <constraint firstItem="1vK-0S-LUP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="20" id="g2a-RF-5HX"/>
+                <constraint firstItem="1vK-0S-LUP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="10" id="yno-ve-rgW"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="133.59999999999999" y="154.72263868065968"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img-delete" width="33" height="33"/>
+        <image name="img-sun" width="1024" height="1024"/>
+    </resources>
+</document>
