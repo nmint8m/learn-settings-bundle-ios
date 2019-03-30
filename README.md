@@ -1,12 +1,12 @@
-## <img src="./Images/img-xcode.png" height="30"> How to use Settings.bundle in iOS
+## <img src="./Images/img-xcode.png" height="30"> How to use Settings.bundle in iOS Project
 
 _Written by: **Nguyen Minh Tam**_
 
 > **Related topics:**
 >
 > - Working with multiple Targets. [See detail][Targets].
-> - Working with multiple Targets and Schemes using `*.xcconfig`. [See detail][Xcconfig].
-> - How to config the setting of application and how to handle it by using `Settings.bundle`. [See detail][Settings].
+> - Manage Targets - Schemes in an iOS Project. [See detail][ProjectTargetScheme].
+> - How to use Settings.bundle in iOS Project. [See detail][Settings].
 
 ### Goal
 
@@ -140,7 +140,7 @@ final class SettingsManager {
 } 
 ```
 
-InfoKey values are defined the same as in `Info.plist`, these values are get from `Debug-Config.xcconfig` / `Release-Config.xcconfig` files, depends on which scheme we are choosing. I showed detail steps in the previous section about [Working with multiple Targets and Schemes using `*.xcconfig`.][Xcconfig]. Now, take a look at what we got in `Info.plist` and `Debug-Config.xcconfig` files.
+InfoKey values are defined the same as in `Info.plist`, these values are get from `Debug-Config.xcconfig` / `Release-Config.xcconfig` files, depends on which scheme we are choosing. I showed detail steps in the previous section about [Manage Targets - Schemes in an iOS Project.][ProjectTargetScheme]. Now, take a look at what we got in `Info.plist` and `Debug-Config.xcconfig` files.
     
 <center>
 	<img src="./Images/info-plist.png" height="500">
@@ -294,9 +294,8 @@ So, that's it. Now we know basic things about `Setting.bundle`. Please support m
 
 **Related topics:**
 
-- Working with multiple Targets. [See detail][Targets].
-- Working with multiple Targets and Schemes using `*.xcconfig`. [See detail][Xcconfig].
-- How to config the setting of application and how to handle it by using `Settings.bundle`. [See detail][Settings].
+- Manage Targets - Schemes in an iOS Project. [See detail][ProjectTargetScheme].
+- How to use Settings.bundle in iOS Project. [See detail][Settings].
 
 **Reference:**
 
@@ -305,8 +304,8 @@ So, that's it. Now we know basic things about `Setting.bundle`. Please support m
 
 ---
 
-[Targets]: https://github.com/nmint8m/xcconfig
-[Xcconfig]: https://github.com/nmint8m/xcconfig
+[ProjectTargetScheme]: https://github.com/nmint8m/projecttargetscheme
 [Settings]: https://github.com/nmint8m/settingsbundle
+
 [Preference]: https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/UserDefaults/Preferences/Preferences.html
 [Schema reference]: https://developer.apple.com/library/archive/documentation/PreferenceSettings/Conceptual/SettingsApplicationSchemaReference/Introduction/Introduction.html
